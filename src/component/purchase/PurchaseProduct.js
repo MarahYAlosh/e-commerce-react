@@ -4,7 +4,7 @@ import {removePurchase} from '../../store/PurchaseSlice'
 
 export const PurchaseProduct = () => {
   const {purchase} =useSelector((state)=>state);
-   console.log(purchase);
+  
    const dispatch = useDispatch();
   const totalPrice = purchase.reduce((acc,curr)=>{
     acc += curr.price *curr.quantity;
@@ -18,7 +18,7 @@ export const PurchaseProduct = () => {
              
             <div className="card mb-3" style={{maxWidth: '840px' , maxHeight: '640px'}}>
             <div className="row g-0">
-            <button onClick={()=>dispatch(removePurchase(el))} type="button" class="btn-close" aria-label="Close"></button>
+            <button onClick={()=>dispatch(removePurchase(el))} type="button" className="btn-close" aria-label="Close"></button>
               <div className="col-md-7">
                 <img src={el.image} className="img-fluid rounded-start" alt="..." />
               </div>
@@ -44,19 +44,6 @@ export const PurchaseProduct = () => {
       })
       return pur;
    }
-
-  //  const content =  ()=>{
-
-  //   return(
-  //     <div>
-  //     <img src={purchase[i].image} />
-
-  //     <h2>{purchase.title}</h2>
-  //     <h2>{purchase.price}$</h2>
-  // </div>
-  //   )
-  //  }
-  // }
 
   return (
 <div className='container'>

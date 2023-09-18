@@ -125,29 +125,3 @@ export const ProcuctList = () => {
   );
 };
 export default ProcuctList;
-
-/*
-          <div className="container">
-          <div className="btn-group" role="group" aria-label="Basic example">
-            <button
-              type="button"
-              onClick={() => getProduct()}
-              className="btn btn-secondary"
-            >
-              All
-            </button>
-            {categories.map((cat) => {
-              return (
-                <button
-                  type="button"
-                  onClick={() => getProductInCategory(cat)}
-                  key={cat}
-                  className="btn btn-secondary"
-                >
-                  {cat}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-*/

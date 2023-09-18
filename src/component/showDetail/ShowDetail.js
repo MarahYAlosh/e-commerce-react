@@ -35,7 +35,7 @@ export const ShowDetail = () => {
     <div className="allButtons" >
       <button className="add" 
       onClick={()=>dispatch(addPurchase(showProduct))}
-      // onClick={()=>console.log('hgj')}
+    
       >Add to Cart</button>
     </div>
   </div>

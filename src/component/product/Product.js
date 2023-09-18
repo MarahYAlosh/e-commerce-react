@@ -14,7 +14,7 @@ export const Product = ({elements}) => {
    
    
     <button >
-                   {/* className="btn btn-primary" */}
+                
     <Link to={`product/${elements.id}`}>
       show Details
     </Link>

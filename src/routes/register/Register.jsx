@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap'
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import {registerSchema} from '../../utill/validationSchema.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../store/registerSlice';
@@ -10,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 export const Register = () => {
   const dispatch =useDispatch()
   const userName = useSelector((state)=>state.register.users)
-  // console.log(userName)
   const navigate = useNavigate()
   
   const formik = useFormik({
@@ -22,22 +20,15 @@ export const Register = () => {
     },
     validationSchema : registerSchema,
     validateOnBlur: true,
-    // validateOnChange : false,
 
     onSubmit: (values,formikHelper) => {
       const emails =userName.map((el)=>el.email)
-      // console.log(emails)
-      
-      //  console.log(values)
       if(emails.find((email)=>email.includes(values.email))){
         formikHelper.setFieldError('email' , 'email already exist')
-        
-        // console.log("email already exist")
       }
       else{
         dispatch(login(values))
         navigate('../login')
-        alert(JSON.stringify(values, null, 2));
       }
     },
   });
