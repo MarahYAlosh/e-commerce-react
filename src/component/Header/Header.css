@@ -1,0 +1,53 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css');
+
+
+.navbar{
+    font-size: 1.5rem ;
+    height: 100px;
+}
+.navbar .nav-link{
+    color: black;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #f7f7f717;
+    outline: 0px;
+    box-shadow: 0 0 0 0.15rem rgb(251 253 255 / 41%);
+}
+.icon-shop i{
+    display: inline-block;
+    font-size: 52px;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .icon-shop{
+        position: absolute;
+        right: 25px;
+    }
+
+
+  }
+  @media (max-width: 992px) {
+
+    .me-auto {
+        margin :20px;
+    }
+  }
+
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    --bs-gutter-x: 0;
+    background-color: white;
+  }

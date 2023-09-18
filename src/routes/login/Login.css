@@ -1,0 +1,12 @@
+
+.align-items-center .card:hover{
+  transform: none;
+}
+form .d-grid{
+  display: flex !important;
+  justify-content: flex-start;
+  gap: 30px;
+}
+form .d-grid .btn:hover{
+  background-color: #c52184;
+}
