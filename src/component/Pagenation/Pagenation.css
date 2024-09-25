@@ -1,0 +1,45 @@
+.pagenation{
+    position: relative;
+}
+.pagenation ul{
+    position: absolute;
+    top: 850px;
+    width: -webkit-fill-available;
+    display: flex;
+    padding: 140px 0 40px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.pagenation li{
+    list-style: none;
+    cursor: pointer;
+    background-color: #ffc0cb99;
+    padding: 10px 25px;
+    color: #777;
+    transition: 0.3s;
+}
+.pagenation li:hover{
+    box-shadow: -1px 0px 11px 3px rgb(245 104 152);
+    background: none;
+    color: #333;
+}
+@media (max-width: 1008px) {
+    .pagenation ul {
+      top: 1300px;
+    }
+   
+  }
+  @media (max-width: 661px) {
+    .pagenation ul {
+        top: 2766px;
+    }
+   
+  }
+  @media (max-width: 450px) {
+    .pagenation ul {
+        top: 3247px;
+    }
+   
+  }

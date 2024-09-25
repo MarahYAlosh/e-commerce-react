@@ -1,0 +1,122 @@
+:root{
+    --white: #F5F5F5;
+    --light: #E0C9CB;
+    --tan: #C3A1A0;
+    --pink: #D9AAB7;
+    --rose: #BA7E7E;
+    --dark: #4E4E4E;
+}
+
+body {
+    display: grid;
+    background: var(--light);
+  }
+  
+  .showContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 750px;
+    background: var(--white);
+    box-shadow: 5px 5px 15px rgba(var(--rose));
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  
+ .showContainer p {
+    font-size: 0.6em;
+    color: var(rose);
+    letter-spacing: 1px;
+  }
+  
+  .showContainer h1 {
+    font-size: 1.7em;
+    color: var(dark);
+    margin-bottom: 20px;
+  }
+  
+   .showContainer h3 {
+    font-size: 1.2rem;
+    margin-top: -5px;
+    margin-bottom: 8px;
+    line-height: 24px;
+  } 
+  
+  .showContainer img {
+    width: 40%;
+    margin-top: 47px;
+    height: 435px;
+  }
+  
+  
+  .product {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+  
+
+
+  
+   .showContainer button {
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    margin: -1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c52184!important;
+    font-weight: 600;
+  }
+
+  .showContainer .allButtons{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .showContainer button:hover {
+      background: var(rose);
+      transition: all .4s ease-in-out;
+      background-color: #e95bb0;
+      color: white!important;
+    }
+  
+  
+  .add {
+    width: 67%;
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .showContainer {
+      margin: 180px 20px 0 20px;
+     display: flex;
+     flex-direction: column;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    .showContainer {
+      width: -webkit-fill-available;
+    }
+  }
+  @media (min-width: 992px) {
+    .showContainer {
+      width: 970px;
+    }
+  }
+
