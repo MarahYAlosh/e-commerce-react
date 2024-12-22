@@ -1,0 +1,20 @@
+.btn-log{
+    width: fit-content;
+    height: 40px;
+    cursor: pointer;
+    border-style: none;
+    background-color: #c52184;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    margin-top: 50px;
+}
+.btn-log:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: all .2s ease-in-out;
+}

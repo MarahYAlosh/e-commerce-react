@@ -1,0 +1,45 @@
+
+body {
+    display: grid;
+    background: var(--light);
+  }
+  .container{
+    margin-top: 103px;
+  
+  }
+  
+  .add {
+    width: 67%;
+  }
+  .mb-3 img{
+    width: inherit;
+  }
+.mb-3:hover img{
+  transform: none !important;
+}
+  
+.btn-close{
+    width: 20px !important;
+    height: 20px !important;
+    background-color: white !important;
+    position: absolute !important;
+    right: 30px !important;
+}
+
+  @media only screen and (max-width: 992px) {
+    .showContainer {
+     margin-top: 180px;
+     display: flex;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .showContainer {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .showContainer {
+      width: 970px;
+    }
+  }

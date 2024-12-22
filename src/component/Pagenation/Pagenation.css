@@ -1,0 +1,55 @@
+.pagenation {
+
+  margin-top: 20px;
+
+}
+
+.pagenation ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pagenation li {
+  cursor: pointer;
+  background-color: #ffc0cb99;
+  padding: 10px 25px;
+  color: #777;
+  border-radius: 5px; /* زوايا مستديرة للأزرار */
+  transition: all 0.3s ease;
+}
+
+.pagenation li:hover {
+  box-shadow: 0px 4px 10px rgba(245, 104, 152, 0.5);
+  background: #fff;
+  color: #333;
+}
+
+.pagenation li.active {
+  background-color: #f56390;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pagenation ul {
+    flex-wrap: nowrap; 
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagenation li {
+    padding: 8px 15px;
+    font-size: 0.9rem; 
+  }
+}
